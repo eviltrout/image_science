@@ -273,7 +273,7 @@ class ImageScience
         if ((fif != FIF_UNKNOWN) && FreeImage_FIFSupportsWriting(fif)) {
           BYTE* image_data_ptr = 0;
           DWORD image_data_length = 0;
-          RSTRING data;
+          VALUE data;
 
           FIMEMORY *stream = FreeImage_OpenMemory(image_data_ptr, image_data_length);
 
